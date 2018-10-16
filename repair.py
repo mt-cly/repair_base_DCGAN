@@ -29,7 +29,6 @@ def init_target():
     # the scope would save the variables of mask and image
     with tf.variable_scope("target"):
         target_img, target_area = image_util.get_target_img()
-        # 统一数据类型:float32
         target_img = target_img.astype('float32')
 
         # cal the mask from target_area
