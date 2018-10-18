@@ -11,7 +11,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 cp = cfg_parser.ConfigParser()
 cp.read('net.cfg')
 
-epochs = cp.getint('repair', 'epoch')
+epochs = cp.getint('repair', 'epochs')
 learning_rate = cp.getfloat('repair', 'learning_rate')
 beta = cp.getfloat('repair', 'beta')
 break_time = cp.getfloat('repair', 'break_time')

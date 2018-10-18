@@ -34,7 +34,7 @@ def get_imgs(size):
         img = img / 255
         list_img.append(img)
         item += 1
-        if item == size:
+        if item == size or item == len(img_path):
             list_img = np.array(list_img)
             # Samples are not many, we can use normalization optional
             # list_img = MinMaxScaler().fit_transform(list_img)
