@@ -6,6 +6,7 @@
 |tensorflow| 1.8.0|
 |python-opencv|3.4.0|
 |configparser|    |
+
 Due to the limitation of devices, I use the tensorflow-cpu, the tesorflow-gpu surely can be a better substitude. 
 ## Create your dataset
 　　Here is some tools for making dataset in image_util.py. Anyway, the shape of facial image should be (64 x 64 x 3).Then put the facial image in 'data_1' folder.
