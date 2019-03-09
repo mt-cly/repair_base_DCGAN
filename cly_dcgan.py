@@ -275,7 +275,7 @@ def train():
         for epoch in range(begin_time, epochs):
             images = image_util.get_imgs(image_num)
 
-            for batch_i in range(image_num // batch_size):
+            for batch_i in range(images.shape[0]  // batch_size):
                 print("training in (epoch = {}, batch = {})".format(epoch, batch_i))
                 batch_images = images[batch_i * batch_size: (batch_i + 1) * batch_size]
 
